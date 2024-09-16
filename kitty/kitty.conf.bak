@@ -1,0 +1,9 @@
+
+# BEGIN_KITTY_THEME
+# Hachiko
+include current-theme.conf
+# END_KITTY_THEME
+
+
+font_family  JetBrainsMono NFM
+font_size 15
