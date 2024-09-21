@@ -21,15 +21,30 @@ export EDITOR=nano
 # -----------------------------------------------------
 
 alias c='clear'
-alias ff='fastfetch'
+alias rm='trash -v'
+alias mkdir='mkdir -p'
+alias cp='cp -v'
+alias ln='ln -v'
 alias ls='eza -a --icons'
-alias ll='eza -al --icons'
+alias ll='eza -albMo --icons'
 alias lt='eza -a --tree --level=1 --icons'
 alias v='$EDITOR'
 
+
+
+alias ff='fastfetch'
 alias wifi='nmtui'
 alias rw='~/dotfiles/waybar/launch.sh'
 alias dot="cd ~/dotfiles"
+
+# -----------------------------------------------------
+# DevOps
+# -----------------------------------------------------
+
+alias d='docker '
+alias k='kubectl '
+alias m='minikube '
+
 
 # -----------------------------------------------------
 # GIT
@@ -89,7 +104,7 @@ export PATH="$PATH:$GOPATH/bin"
 # Pipx
 
 export PATH="$PATH:/root/.local/bin"
-export PATH="$PATH:/home/dj-yacine/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 ################################
 # Android Studio
@@ -121,8 +136,8 @@ export PATH="$PATH:$RUSTUP_HOME:$CARGO_HOME:$CARGO_HOME/bin"
 ###############################
 # Apps
 
-export ESRGEN_HOME="/home/dj-yacine/Apps/real-esrgan/"
-export FFMPEG_SCRIPTS_HOME="/home/dj-yacine/Apps/ffmpeg-scripts/"
+export ESRGEN_HOME="$HOME/Apps/real-esrgan/"
+export FFMPEG_SCRIPTS_HOME="$HOME/Apps/ffmpeg-scripts/"
 
 export PATH="$PATH:$ESRGEN_HOME"
 export PATH="$PATH:$FFMPEG_SCRIPTS_HOME"
